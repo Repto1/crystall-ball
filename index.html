@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./cristal-ball.svg" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Reveal your fate!</title>
   </head>
   <body>
     <div id="container">
-      <img src="http://lorempixel.com.br/200/200" alt="imagem aleatoria" />
-      <h1>Vou revelar seu destino!</h1>
-      <p>Clique em fazer pergunta para que seu destino seja revelado</p>
-      <input type="text" placeholder="Digite sua pergunta" />
-      <button>Fazer Pergunta</button>
+      <img src="./cristal-ball.svg" alt="Random Image" />
+      <h1>I will reveal your fate!</h1>
+      <p>Click on reveal fate and your destiny will be revealed</p>
+      <input id="doubtInput" type="text" placeholder="Type your doubt" />
+      <button id="answerButton" onclick="makeDoubt()">Reveal fate</button>
+
+      <h3 id="answer"></h3>
     </div>
   </body>
+  <script src="./main.js"></script>
 </html>

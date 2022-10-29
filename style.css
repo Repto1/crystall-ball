@@ -41,8 +41,9 @@ button {
 }
 
 input {
+  box-sizing: border-box;
   margin-bottom: 20px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 button {
@@ -55,4 +56,17 @@ button {
 button:hover {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+#answer {
+  margin-top: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#answer div {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
